@@ -4,6 +4,7 @@ import { ArrowRight, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Pricing from "@/components/pricing";
 import { creditBenefits, features, testimonials } from "@/lib/data";
 
 export default function Home() {
@@ -97,7 +98,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials with green medical accents */}
+      {/* Pricing Section (inserted here BEFORE Success Stories) */}
+      <section id="pricing" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge
+              variant="outline"
+              className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-emerald-400 text-sm font-medium mb-4"
+            >
+              Affordable Healthcare
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Consultation Packages
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Choose the perfect consultation package that fits your healthcare
+              needs
+            </p>
+          </div>
+
+          <div className="mx-auto">
+            {/* Clerk Pricing Table */}
+            <Pricing />
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials (Success Stories) */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -147,7 +174,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section with green medical styling */}
+      {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <Card className="bg-gradient-to-r from-emerald-900/30 to-emerald-950/20 border-emerald-800/20">
