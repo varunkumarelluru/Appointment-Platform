@@ -39,13 +39,14 @@ This project requires the following dependencies:
 ### Installation
 To get started with Appointment-Platform, follow these steps to build from the source and install dependencies:
 
-1. **Clone the repository:**
+```bash
+# Clone the repository
+git clone https://github.com/varunkumarelluru/Appointment-Platform
 
-   ```bash
-   git clone https://github.com/varunkumarelluru/Appointment-Platform
+```bash
+# Navigate to the project directory
+cd Appointment-Platform
 
-2. Navigate to the project directory:
-
-     cd Appointment-Platform
-
-
+```bash
+# Install the dependencies
+npm install
